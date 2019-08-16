@@ -37,9 +37,14 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
+  new_array=[]
+  holder=[]
   array.each do |i|
-    i.split("")
+     holder = i.split("")
+     holder[2]="$"
+     new_array << holder.join
   end
+  new_array
 end
 
 
