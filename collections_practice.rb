@@ -23,6 +23,10 @@ def swap_elements(array)
 end
 
 def swap_elements_from_to(array,index,destination_index)
+  holder=[array[index],index,array[destination_index],destination_index]
+  array[index]=holder[2]
+  array[destination_index]=holder[1]
+  array
   
 end
 
