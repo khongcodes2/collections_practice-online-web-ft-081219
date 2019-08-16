@@ -32,7 +32,7 @@ end
 
 def reverse_array(array)
   array.sort do |a,b|
-    array[b].index<=>array[a].index
+    b.index<=>a.index
   end
 end
 
